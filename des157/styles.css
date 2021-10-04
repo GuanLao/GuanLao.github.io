@@ -49,8 +49,8 @@ header h2{
 }
 #eye{
     position: absolute;
-    width:175px;
-    height:175px;
+    width:180px;
+    height:180px;
     left:470px;
     bottom:50px;
     
@@ -75,9 +75,12 @@ header h2{
 
 }
 #container{
-    width:1200;
-    min-width:800px;
-    margin: auto;
+    max-width: 1366px;
+    min-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    
+   
     border: solid 5px rgb(104, 1, 1);
     
 
@@ -146,13 +149,16 @@ footer p a i{
     font-size:22px;
 }
 #bar-1{
-   width:120px;
-   height:120px;
-   background-color:rgb(255, 1, 1);
+   width:180px;
+   height:180px;
+   border-radius: 50%;
+   
    position: absolute;
    transform: rotate(45deg);
    left:200px;
-   bottom:80px;
+   bottom:45px;
+   background-image: url(/des157/images/sharingan2.png);
+   background-size:cover;
    
 }
 #bar-1:hover{
@@ -163,17 +169,20 @@ footer p a i{
 
 }
 #bar-2{
-    width:120px;
-    height:120px;
+    width:180px;
+   height:180px;
+   border-radius: 50%;
     background-color:rgb(255, 1, 1);
     position: absolute;
     transform: rotate(45deg);
-    right:200px;
-    bottom:80px;
+    right:180px;
+    bottom:45px;
+    background-image: url(/des157/images/sharingan3.png);
+   background-size:cover;
     
  }
  #bar-2:hover{
-     transform:rotate(-2475deg) ;
+     transform:rotate(2475deg) ;
      transition:all 5s ease-out;
      cursor:pointer;
  }
@@ -181,5 +190,6 @@ footer p a i{
 background-color:black;
 transition:all 8s ease-out;
 }
+
 
 
