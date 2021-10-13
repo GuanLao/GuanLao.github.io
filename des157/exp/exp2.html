@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 1</title>
+</head>
+<body>
+    <h1> Experiment 2</h1>
+    <h2 My favorite fruit is id="fruit"> fruit</h2>
+    <script>
+
+    var selectedNum=prompt("Guess what's my favorite fruit, (kiwi), (banana), (apple), (perry), (strawberry)", "");
+
+    
+
+    var fruit=["kiwi", "banana", "apple", "perry", "strawberry",""];
+    function randomInt(min,max){
+
+        return Math.floor((max-min+1)*Math.random()) + min;
+    }
+    console.log(fruit[randomInt(0,4)]);
+
+    console.log(`My favorite fruit is ${fruit[randomInt(0,4)]}! did you guess it right?`)
+
+    var anchors= document.getElementById("fruit");
+    anchors.innerHTML = fruit[randomInt(0,4)];
+
+
+
+       
+   
+        
+        
+        
+
+        
+ 
+ 
+ 
+         
+        
+     </script>
+</body>
+</html>
