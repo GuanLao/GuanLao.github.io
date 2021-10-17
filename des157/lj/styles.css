@@ -4,7 +4,7 @@ body{
     background-image: url(../images/learning_journal_back.jpg);
     background-size:cover;
 }
-section{
+main{
     width:70%;
     margin:0 auto;
     font-size: 18px;
