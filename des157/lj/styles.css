@@ -16,6 +16,7 @@ main{
     column-count: 3;
     column-gap: 40px;
     column-rule:3px solid rgb(116, 12, 12);
+    
 
     
 }
@@ -86,6 +87,19 @@ p{
     margin-top:40px;
     font-size: 16px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+article{
+    margin-bottom: 100px;
+}
+
+time{
+    color:rgb(116, 12, 12);
+    font-weight: bold;
+    
+    
+   
+    
+
 }
 
     
