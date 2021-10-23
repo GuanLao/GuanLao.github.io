@@ -3,10 +3,14 @@ body{
     max-height:768px;
     background-image: url(../images/learning_journal_back.jpg);
     background-size:cover;
+    width:80%;
+    margin:auto;
 }
 main{
+    text-align: left;
     width:70%;
-    margin:0 auto;
+    margin:auto;
+    
     font-size: 18px;
     line-height: 1.5em;
     font-family: Georgia, 'Times New Roman', Times, serif;
