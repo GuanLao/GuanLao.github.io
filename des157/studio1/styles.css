@@ -52,7 +52,7 @@ select{
     box-shadow:0 10px 25pz black;
     background:rgb(255, 240, 216);
     max-width:300px;
-    text-align: center;
+    text-align: left;
     color:rgb(0, 0, 0);
     box-shadow: 1px 12px 8px -2px rgba(0,0,0,0.28); 
     box-shadow: 1px 12px 8px -2px rgba(0,0,0,0.28);
