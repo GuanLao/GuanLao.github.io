@@ -11,7 +11,7 @@ body{
     max-width: 1366px;
     max-height:768px;
     background-color: #fccd88;
-    background:url(/des157/madlibs/images/background1.jpg);
+    background:url(images/background1.jpg);
     background-size:cover;
     animation:fadeinFromTop .5s linear forwards;
     
