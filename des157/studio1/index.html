@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    <title>Build Your Own Ninja</title>
+</head>
+<body>
+    <!-- questions -->
+    <main>
+        <div id="main-container">
+            <header>
+                <h1 id="ninja">BUILD YOUR OWN NINJA!</h1>
+            </header>
+            
+            <div >
+                <img id="naru" src="images/naruto1.png" alt="naruto">
+                <img id="rasengan" src="images/rasengan.png" alt="rasen">
+            </div>
+            <section>
+                <article id="madlib"></article>
+                    <!-- name -->
+                    <form id ="myform">
+                    <!-- <label for="name">Insert Name</label> -->
+                    <input  type="text" id="name" placeholder="Insert Name" required>
+        
+                    <!-- Village dropdown -->
+                    <label for="village">Village</label >
+                    <select id="village" name="village" required >
+                    <option value="">Select</option>
+                    <option value="Land of Fire">Land of Fire</option>
+                    <option value="Land of Earth">Land of Earth</option>
+                    <option value="Land of Water">Land of Water</option>
+                    <option value="Land of Wind">Land of Wind</option>
+                    <option value="Land of Lighting">Land of Lighting</option>
+                    </select>
+        
+                     <!-- food dropdown -->
+                     <label for="food">Food</label>
+                     <select id="food" name="food"  required>
+                     <option value="" >Select</option>
+                     <option value="Onigiri">Onigiri</option>
+                     <option value="Yaki Dango">Yaki Dango</option>
+                     <option value="Ramen">Ramen</option>
+                     <option value="Takoyaki">Takoyaki</option>
+                     <option value="Ebi Fry">Ebi Fry</option>
+                     </select>
+        
+                      <!-- Goal dropdown -->
+                    <label for="goal">Goal</label>
+                    <select id="goal" name="goal" required >
+                    <option value="">Select</option>
+                    <option value="Kage">Kage</option>
+                    <option value="Abu">Abu</option>
+                    <option value="Jonin">Jonin</option>
+                    <option value="Akatsuki">Akatsuki</option>
+                    </select>
+        
+                    <!-- Goal dropdown -->
+        
+                    <label for="ultimate">Ultimate Move </label>
+                    <select id="ultimate" name="ultimate" required>
+                    <option value="">Select </option>
+                    <option value="Rasengan">Rasengan</option>
+                    <option value="Fireball Jutsu">Fireball Jutsu</option>
+                    <option value="ShadowClone">ShadowClone</option>
+                    <option value="Summon Jutsu">Summon Jutsu</option>
+                    </select>
+        
+        
+          
+                    <button type="submit" value="submit" id="open"> Finish  </button>
+                </form>
+         
+                
+                
+                
+              
+            </section>
+        </div>
+
+        <div id="result-container" class="hidden">
+        <!-- /////result here///// -->
+
+        
+        </div>
+    </main>
+    
+
+    <footer>
+        <nav>
+            <ul>
+                <li>
+                    <a href="https://validator.w3.org/check?uri=referer">html</a>
+                </li>
+                <li>
+                    <a href="https://jigsaw.w3.org/css-validator/check/referer">css</a>
+                </li>
+            </ul>
+        </nav>
+
+    </footer>
+    
+</body>
+</html>
