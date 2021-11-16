@@ -9,33 +9,24 @@
         sections[0].className = "hidden";
         sections[1].className = "showing orange";
     });
-    const scroll = window.requestAnimationFrame || function(callback){
-        window.setTimeout(callback,1000/60)};
-    const elementsToShow = document.querySelectorAll(".show-on-scroll");
-    
-    function loop(){
-        elementsToShow.forEach(function(element){
-        
-            if(isElementInViewport(element)){
-                element.classList.add("is-visible");
-            }else{
-                element.classList.remove("is-visible")
+
+    window.addEventListener("scroll", show);
+
+    function show() {
+        const shows = document.querySelectorAll(".show");
+
+        for (let i = 0; i < shows.length; i++) {
+
+            const windowheight = window.innerHeight;
+            const showingpoint = 180;
+            const showtop = shows[i].getBoundingClientRect().top;
+
+
+            if (showtop < windowheight - showingpoint) {
+                shows[i].classList.add('active');
+            } else {
+                shows[i].classList.remove('active');
             }
-        });
-        scroll(loop);
-            }
-            loop();
-    function isElementInViewport(el){
-        if(typeof jQuery === "function" && el instanceof jQuery){
-            el=el[0];
         }
-        const rect = el.getBoundingClientRect();
-        return(rect.top <= 0 && rect.bottom >=0)
-        || 
-        (rect.bottom>= (window.innerHeight|| document.documentElement.clientHeight)&& 
-        rect.top <= (window.innerHeight || document.documentElement.clientHeight))
-        ||
-        rect.top >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
     }
 })();
