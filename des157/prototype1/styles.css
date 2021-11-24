@@ -1,0 +1,499 @@
+@font-face {
+    font-family: narufont;
+    src: url(/des157/studio1/font/njnaruto.ttf);
+}
+
+body {
+    overflow: hidden;
+    max-width: 1366px;
+    max-height: 768px;
+    background-color: #fccd88;
+    background: url(images/background1.jpg);
+    background-size: cover;
+    animation: fadeinFromTop .5s linear forwards;
+}
+
+#ninja {
+    text-align: center;
+    position: relative;
+    font-family: narufont;
+    font-size: 3.3em;
+    color: rgb(255, 94, 0);
+    letter-spacing: 5px;
+    text-shadow: 2px 2px #030303;
+}
+
+
+/* ///////////form////////////// */
+
+label {
+    font-family: 'Nunito', sans-serif;
+    color: black;
+    font-weight: bold;
+}
+
+label,
+input {
+    display: block;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+select {
+    padding: 10px 30% 20px 10px;
+    border: black 1px solid;
+    padding: 15px 30px;
+    margin-bottom: 50px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.3em;
+    border-radius: 15px;
+    appearance: none;
+    box-shadow: 0 10px 25px black;
+    background: rgb(255, 240, 216);
+    max-width: 300px;
+    text-align: center;
+    color: rgb(66, 66, 66);
+    box-shadow: 1px 12px 8px -2px rgba(0, 0, 0, 0.28);
+    box-shadow: 1px 12px 8px -2px rgba(0, 0, 0, 0.28);
+}
+
+select:hover {
+    border: rgb(255, 94, 0) solid 1px;
+}
+
+option[type=text],
+select {
+    width: 100%;
+}
+
+input {
+    text-align: center;
+    border: black solid 1px;
+    padding: 10px 10px 20px 5px;
+    background: rgb(255, 240, 216);
+    border-radius: 15px;
+    box-shadow: 1px 12px 8px -2px rgba(0, 0, 0, 0.28);
+    box-shadow: 1px 12px 8px -2px rgba(0, 0, 0, 0.28);
+    animation: fadeinFromTop .5s linear forwards;
+    margin-bottom: 50px;
+}
+
+input:hover {
+    border: rgb(255, 94, 0) solid 1px;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+}
+
+article {
+    font-size: 2em;
+    margin-right: .5em;
+}
+
+button {
+    font-size: 2.5em;
+    border: none;
+    background: none;
+    position: fixed;
+    bottom: -35px;
+    right: 20px;
+    font-family: narufont;
+    color: rgb(255, 94, 0);
+    text-shadow: 2px 2px #030303;
+    letter-spacing: 5px;
+}
+
+button:hover {
+    text-shadow: 2px 5px #030303;
+}
+
+
+/* //////////// Key Image/ animation///////////////  */
+
+#naru {
+    position: absolute;
+    margin-left: 15%;
+    top: 22%;
+    transform-origin: center;
+    animation: fadeinFromTop .5s linear forwards;
+}
+
+#narufront {
+    position: absolute;
+    top: 22%;
+    transform-origin: center;
+    animation: fadeinFromTop .5s linear forwards;
+}
+
+#rasengan {
+    width: 100px;
+    position: absolute;
+    margin-left: 42%;
+    top: 50%;
+    transform-origin: center;
+    animation: fadeinFromTop .5s linear forwards, floating ease-in 4s infinite;
+}
+
+@keyframes fadeinFromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0%, 0%) rotate(360deg);
+    }
+    25% {
+        transform: translate(2%, 20%) rotate(360deg);
+    }
+    50% {
+        transform: translate(1%, 5%) rotate(360deg);
+    }
+    75% {
+        transform: translate(3%, 25%) rotate(360deg);
+    }
+    100% {
+        transform: translate(0%, 0%) rotate(360deg);
+    }
+}
+
+#navbar ul {
+    display: flex;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    gap: 20%;
+    justify-content: center;
+    margin-left: 30%;
+    list-style: none;
+}
+
+#navbar h2 {
+    font-size: 1.5em;
+}
+
+.underline {
+    border-bottom: 8px rgb(255, 94, 0) solid;
+    border-radius: 10px;
+    padding-bottom: 5px;
+    color: rgb(255, 94, 0);
+}
+
+.hidden {
+    display: none;
+}
+
+.showing {
+    display: block;
+}
+
+
+/* /////////////overlay////////////////////////// */
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+    visibility: visible;
+    opacity: 1;
+}
+
+#overlayone {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: -35px;
+    left: -8px;
+    width: 100vw;
+    height: 100vh;
+}
+
+#overlayone article {
+    position: absolute;
+    box-sizing: border-box;
+    background-color: rgb(255, 240, 216);
+    padding: 20px;
+    width: 80vw;
+    height: 80vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+}
+
+#overlaytwo {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: -35px;
+    left: -8px;
+    width: 100vw;
+    height: 100vh;
+}
+
+#overlaytwo article {
+    position: absolute;
+    box-sizing: border-box;
+    background-color: rgb(255, 240, 216);
+    padding: 20px;
+    width: 80vw;
+    height: 80vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+}
+
+#overlaythree {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: -35px;
+    left: -8px;
+    width: 100vw;
+    height: 100vh;
+}
+
+#overlaythree article {
+    position: absolute;
+    box-sizing: border-box;
+    background-color: rgb(255, 240, 216);
+    padding: 20px;
+    width: 80vw;
+    height: 80vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+}
+
+#overlayfour {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: -35px;
+    left: -8px;
+    width: 100vw;
+    height: 100vh;
+}
+
+#overlayfour article {
+    position: absolute;
+    box-sizing: border-box;
+    background-color: rgb(255, 240, 216);
+    padding: 20px;
+    width: 80vw;
+    height: 80vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+}
+
+#overlayfive {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: -35px;
+    left: -8px;
+    width: 100vw;
+    height: 100vh;
+}
+
+#overlayfive article {
+    position: absolute;
+    box-sizing: border-box;
+    background-color: rgb(255, 240, 216);
+    padding: 20px;
+    width: 80vw;
+    height: 80vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+}
+
+h2 {
+    font-family: narufont;
+    font-size: 1em;
+    letter-spacing: 5px;
+}
+
+#close {
+    position: absolute;
+    font-size: 30px;
+    top: -90%;
+    text-shadow: none;
+    color: black;
+}
+
+#close1 {
+    position: absolute;
+    font-size: 30px;
+    top: -90%;
+    text-shadow: none;
+    color: black;
+}
+
+#close2 {
+    position: absolute;
+    font-size: 30px;
+    top: -90%;
+    text-shadow: none;
+    color: black;
+}
+
+#close3 {
+    position: absolute;
+    font-size: 30px;
+    top: -90%;
+    text-shadow: none;
+    color: black;
+}
+
+#close4 {
+    position: absolute;
+    font-size: 30px;
+    top: -90%;
+    text-shadow: none;
+    color: black;
+}
+
+
+/* endofoverlay */
+
+
+/* overlay content */
+
+
+/* ///////////////Reult////////////////// */
+
+span {
+    color: rgb(255, 94, 0);
+}
+
+#resulth1 {
+    text-align: center;
+    margin-top: 5%;
+    font-family: narufont;
+    font-size: 5em;
+    color: rgb(255, 94, 0);
+    letter-spacing: 5px;
+    text-shadow: 2px 2px #030303;
+}
+
+p {
+    position: fixed;
+    top: 90px;
+    right: 10px;
+    text-align: left;
+    margin-right: 7%;
+    width: 50%;
+    font-family: narufont;
+    font-size: 2em;
+    line-height: 60px;
+    letter-spacing: 2px;
+    background-color: rgba(255, 255, 255, 0.26);
+    padding: 20px;
+}
+
+footer {
+    position: absolute;
+    bottom: -50px;
+}
+
+footer li:first-child {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+footer li {
+    list-style: none;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(255, 94, 0);
+    font-family: narufont;
+    font-size: 2em;
+    text-shadow: 2px 2px #030303;
+}
+
+footer a:hover {
+    text-shadow: 2px 3px #030303;
+}
+
+#villageButton {
+    border: solid 1px green;
+    color: white;
+    background-color: rgb(0, 197, 247);
+    border: none;
+    padding: 8px 12px 8px 12px;
+    border-radius: 50%;
+    position: absolute;
+    left: 82%;
+    top: 403px;
+}
+
+#foodButton {
+    border: solid 1px green;
+    color: white;
+    background-color: rgb(0, 197, 247);
+    border: none;
+    padding: 8px 12px 8px 12px;
+    border-radius: 50%;
+    position: absolute;
+    left: 82%;
+    top: 550px;
+}
+
+#goalButton {
+    border: solid 1px green;
+    color: white;
+    background-color: rgb(0, 197, 247);
+    border: none;
+    padding: 8px 12px 8px 12px;
+    border-radius: 50%;
+    position: absolute;
+    left: 82%;
+    top: 260px;
+}
+
+#ultimateButton {
+    border: solid 1px green;
+    color: white;
+    background-color: rgb(0, 197, 247);
+    border: none;
+    padding: 8px 12px 8px 12px;
+    border-radius: 50%;
+    position: absolute;
+    left: 82%;
+    top: 405px;
+}
+
+#senseiButton {
+    border: solid 1px green;
+    color: white;
+    background-color: rgb(0, 197, 247);
+    border: none;
+    padding: 8px 12px 8px 12px;
+    border-radius: 50%;
+    position: absolute;
+    left: 82%;
+    top: 550px;
+}
+
+#restart {
+    position: fixed;
+    top: 620px;
+    right: 20px;
+}
