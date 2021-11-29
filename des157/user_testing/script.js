@@ -18,9 +18,9 @@
     const restart = document.querySelector('#restart');
     const villageinfo = document.querySelector('#overlayone');
     const foodinfo = document.querySelector('#overlaytwo');
-    const goalinfo = document.querySelector('#overlaytwo');
-    const ultimateinfo = document.querySelector('#overlaytwo');
-    const senseiinfo = document.querySelector('#overlaytwo');
+    const goalinfo = document.querySelector('#overlaythree');
+    const ultimateinfo = document.querySelector('#overlayfour');
+    const senseiinfo = document.querySelector('#overlayfive');
 
     document.querySelector('#one').addEventListener('click', function() {
         one.className = "underline"
