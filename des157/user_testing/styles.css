@@ -179,6 +179,14 @@ button:hover {
     font-size: 1.5em;
 }
 
+#navbar:hover {
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
 .underline {
     border-bottom: 8px rgb(255, 94, 0) solid;
     border-radius: 10px;
