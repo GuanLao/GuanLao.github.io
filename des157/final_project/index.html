@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+    <title>User Testing</title>
+</head>
+
+<body>
+    <!-- questions -->
+    <main>
+        <div id="main-container">
+            <header>
+                <h1 id="ninja">BUILD YOUR OWN NINJA!</h1>
+            </header>
+            <nav id="navbar">
+                <ul>
+                    <li>
+                        <h2 id="one" class="underline">Background</h2>
+                    </li>
+                    <li>
+                        <h2 id="two">Your Way</h2>
+                    </li>
+                </ul>
+            </nav>
+
+            <div>
+                <img id="naru" src="images/naruto1.png" alt="naruto">
+                <img id="rasengan" src="images/rasengan.png" alt="rasen">
+            </div>
+            <section>
+                <article id="madlib"></article>
+                <!-- name -->
+                <form id="myform">
+                    <div id="first">
+                        <!-- <label for="name">Insert Name</label> -->
+                        <label for="name">Name</label >
+                    <input type="text" id="name" placeholder="Insert Name" required>
+                    
+                    <!-- Village dropdown -->
+                    <label for="village">Countries</label >
+                    <select id="village" name="village" required> 
+                    <option value="">Select</option>
+                    <option value="Land of Fire">Land of Fire</option>
+                    <option value="Land of Earth">Land of Earth</option>
+                    <option value="Land of Water">Land of Water</option>
+                    <option value="Land of Wind">Land of Wind</option>
+                    <option value="Land of Lighting">Land of Lighting</option>
+                    </select>
+                    
+                    <input type="button" value=" i " id="villageButton"> 
+                
+                     <!-- food dropdown -->
+                     <label for="food">Food</label>
+                        <select id="food" name="food" required>
+                     <option value="" >Select</option>
+                     <option value="Onigiri">Onigiri</option>
+                     <option value="Yaki Dango">Yaki Dango</option>
+                     <option value="Ramen">Ramen</option>
+                     <option value="Takoyaki">Takoyaki</option>
+                     <option value="Ebi Fry">Ebi Fry</option>
+                     </select>
+
+                        <input type="button" value=" i " id="foodButton">
+
+                    </div>
+
+                    <div id="second" class="hidden">
+                        <!-- Goal dropdown -->
+                        <label for="goal">Goal</label>
+                        <select id="goal" name="goal" required>
+                    <option value="">Select</option>
+                    <option value="Kage">Kage</option>
+                    <option value="Abu">Anbu</option>
+                    <option value="Jonin">Jonin</option>
+                    <option value="Akatsuki">Akatsuki</option>
+                    </select>
+                        <input type="button" value=" i " id="goalButton">
+
+                        <!-- Ultimate dropdown -->
+
+                        <label for="ultimate">Jutsu </label>
+                        <select id="ultimate" name="ultimate" required>
+                    <option value="">Select </option>
+                    <option value="Rasengan">Rasengan</option>
+                    <option value="Fireball Jutsu">Fireball Jutsu</option>
+                    <option value="ShadowClone">ShadowClone</option>
+                    <option value="Summon Jutsu">Summon Jutsu</option>
+                    </select>
+                        <input type="button" value=" i " id="ultimateButton">
+
+                        <!-- Sensei dropdown -->
+
+                        <label for="sensei">Sensei </label>
+                        <select id="sensei" name="sensei" required>
+                    <option value="">Select </option>
+                    <option value="Kakashi">Kakashi</option>
+                    <option value="Minato">Minato</option>
+                    <option value="Jiraiya">Jiraiya</option>
+                    <option value="Itachi">Itachi</option>
+                    </select>
+                        <input type="button" value=" i " id="senseiButton">
+
+                    </div>
+
+
+                    <button id="next">next</button>
+                    <button type="submit" value="submit" id="open" class="hidden"> Finish  </button>
+                </form>
+
+
+
+
+
+            </section>
+        </div>
+
+        <div id="result-container" class="hidden">
+
+            <!-- /////result here///// -->
+        </div>
+
+        <section id="overlayone" class="hidden">
+            <article id="content">
+                <button id="close">X</button>
+                <h3>Countries</h3>
+                <div class="content">
+                    <img src="images/fire-01.png" alt="fire">
+                    <h6> Land of fire </h6>
+                    <p>
+                        Land of Fire(火の国) is one of the largest and most powerful countries seen, and is the home of the main characters of the series. The Land of Fire is appropriately oriented towards the element of fire, typically having very bright and warm weather. While
+                        not the physically largest country
+                    </p>
+
+                </div>
+                <div class="content">
+                    <img src="images/earth-01.png" alt="fire">
+                    <h6> Land of Earth </h6>
+                    <p>
+                        Land of Earth(土の国) is mostly comprised of desolate, rocky areas. The border of the Land of Earth runs along a rocky mountain range, blocking communication with other countries. The rocky mountain ranges that surround the village provide a natural stronghold
+                        that it is very proud of.
+                    </p>
+
+                </div>
+                <div class="content">
+                    <img src="images/lightning-01.png" alt="fire">
+                    <h6> Land of Lightning </h6>
+                    <p>
+                        Land of Lightning(雷の国) is in the centre of the country are vast mountain ranges, whose many thunderstorms are said to give the country its name. Many rivers flow to the sea, creating a very crooked coastline that displays an impressive oceanic beauty.
+                        There are many hot springs within the country.
+                    </p>
+
+                </div>
+                <div class="content">
+                    <img src="images/water-01.png" alt="fire">
+                    <h6> Land of Water </h6>
+                    <p>
+                        Land of Water(水の国) also known as the "Land of Mist" (霧の国) The country's weather is typically cool and the islands are usually covered by mist. The islands themselves also feature many lakes.The nation is oriented towards the element of water.
+                    </p>
+
+                </div>
+                <div class="content">
+                    <img src="images/wind-01.png" alt="fire">
+                    <h6> Land of Wind </h6>
+                    <p>
+                        The Land of Wind(風の国) is one of the more prominent countries.The country is significantly composed of deserts and thus has little productivity. Because there is very little rainfall throughout the year, the people of the country live in villages built
+                        on one of the desert's many oases.
+                    </p>
+                </div>
+
+
+
+            </article>
+        </section>
+
+        <section id="overlaytwo" class="hidden">
+            <article>
+                <button id="close1">X</button>
+                <h3>Food</h3>
+                <div class="content">
+                    <img src="images/foodone-01.png" alt="fire">
+                    <h6> Onigri </h6>
+                    <p>
+                        Onigiri, also known as omusubi, nigirimeshi, or rice ball, is a Japanese food made from white rice formed into triangular or cylindrical shapes and often wrapped in nori.
+                    </p>
+
+                </div>
+                <div class="content">
+                    <img src="images/foodtwo-01.png" alt="fire">
+                    <h6> Yaki Dango </h6>
+                    <p>
+                        Yaki Dango is a traditional Japanese rice dumpling smothered in an irresistibly sweet soy glaze. The dumplings are skewered on a bamboo stick
+                    </p>
+
+                </div>
+                <div class="content">
+                    <img src="images/foodthree-01.png" alt="fire">
+                    <h6> Ramen </h6>
+                    <p>
+                        Ramen is a Japanese noodle soup. It consists of Chinese-style wheat noodles served in a meat or (occasionally) fish-based broth, often flavored with soy sauce or miso, and uses toppings such as sliced pork, nori, menma, and scallions.
+                    </p>
+
+                </div>
+                <div class="content">
+                    <img src="images/foodfour-01.png" alt="fire">
+                    <h6> Takoyaki </h6>
+                    <p>
+                        Takoyaki or "octopus balls" is a ball-shaped Japanese snack made of a wheat flour-based batter and cooked in a special molded pan. It is typically filled with minced or diced octopus, tempura scraps, pickled ginger, and green onion.
+                    </p>
+
+                </div>
+                <div class="content">
+                    <img src="images/foodfive-01.png" alt="fire">
+                    <h6> Ebi Fry </h6>
+                    <p>
+                        Ebi Fry is a Japanese fried shrimp made with succulent shrimp coated with Panko breadcrumbs and fried till golden brown. The preparation is similar to Tonkatsu and Korokke.
+                    </p>
+                </div>
+
+            </article>
+        </section>
+
+        <section id="overlaythree" class="hidden ">
+            <article>
+                <button id="close2">X</button>
+                <h3>Goal</h3>
+                <div class="content">
+                    <img src="images/kage-01.png" alt="fire">
+                    <h6> Kage </h6>
+                    <p>
+                        Kage(影) is a title reserved for the leader of one of the Five Great Shinobi Countries' hidden villages. They are collectively known as the Five Kage (五影, Gokage, literally meaning: Five Shadows). A Kage oversees the activities of their village, from sending
+                        ninja on missions to making the hard decisions regarding the safety of their people.
+                    </p>
+
+                </div>
+                <div class="content">
+                    <img src="images/abu-01.png" alt="fire">
+                    <h6> Anbu </h6>
+                    <p>
+                        The Anbu(暗部), short for Ansatsu Senjutsu Tokushu Butai, literally meaning: Special Assassination and Tactical Squad, are covert operatives of capable ninja that are dispatched by their village leader.
+                    </p>
+
+                </div>
+                <div class="content">
+                    <img src="images/jonin-01.png" alt="fire">
+                    <h6> Jonin </h6>
+                    <p>
+                        Jōnin(上忍) are generally highly experienced and highly skilled shinobi who serve as military captains. Jōnin are generally able to use at least two types of elemental chakra. It is not unusual for jōnin to go on missions alone. They are often sent on A-rank
+                        missions, and if experienced enough, S-rank missions
+                    </p>
+
+                </div>
+                <div class="content">
+                    <img src="images/akat-01.png" alt="fire">
+                    <h6> Akatsuki </h6>
+                    <p>
+                        Akatsuki(暁) was a group of shinobi that existed outside the usual system of hidden villages. Over the course of several decades, Akatsuki took different forms and was led by different individuals. Though each iteration is viewed as either subversives
+                        or criminals, all seek to make the world a better place through their own means.
+                    </p>
+
+                </div>
+
+
+
+            </article>
+        </section>
+
+        <section id="overlayfour" class="hidden ">
+            <article>
+                <button id="close3">X</button>
+                <h3>Jutsu</h3>
+
+                <div class="content">
+                    <img src="images/rasengan-01.png" alt="fire">
+                    <h6> Rasengan </h6>
+                    <p>
+                        The Rasengan is a spinning ball of chakra formed and held in the palm of the user's hand that does great amount of damage, which is only known to a handful of shinobi(Ninja).
+                    </p>
+
+                </div>
+                <div class="content">
+                    <img src="images/fireball-01.png" alt="fire">
+                    <h6> Fireball Jutsu </h6>
+                    <p>
+                        The user kneads chakra in their body and turns it into fire, which they then expel from their mouth; the more chakra they use, the more flames that are produced. Sometimes the flames lack a distinct shape, being only a stream, but more often than not
+                        they take the form of a giant orb that maintains its shape until hitting a target.
+                    </p>
+
+                </div>
+                <div class="content">
+                    <img src="images/shadowclone-01.png" alt="fire">
+                    <h6> ShadowClone Jutsu </h6>
+                    <p>
+                        This jutsu allows the user to create one or more copies of themselves. The user's chakra is evenly divided between themselves and their clones: creating one clone will give it half the user's chakra, creating two clones will give each a third of the user's
+                        chakra, and so on. (Great for mutitasking ^.^)
+                    </p>
+
+                </div>
+                <div class="content">
+                    <img src="images/summon-01.png" alt="fire">
+                    <h6> Summonning Jutsu </h6>
+                    <p>
+                        The Summoning Technique allows the user to transport a target to their location. Before an animal can be summoned, a prospective summoner must first form a contract with the animal and/or its species. In the case of the toads, the contract is a scroll
+                        that the summoner signs their name to using their own blood.
+                    </p>
+
+                </div>
+
+
+            </article>
+        </section>
+
+        <section id="overlayfive" class="hidden ">
+            <article>
+                <button id="close4">X</button>
+                <h2>Sensei</h2>
+
+
+            </article>
+        </section>
+
+        <div id="moverestart">
+            <button id="restart" class="hidden "> restart</button>
+        </div>
+
+    </main>
+
+
+    <footer>
+        <nav>
+            <ul>
+                <li>
+                    <a href="https://validator.w3.org/check?uri=https://guanlao.github.io/des157/user_testing/index.html ">html</a>
+                </li>
+                <li>
+                    <a href="https://jigsaw.w3.org/css-validator/check/referer ">css</a>
+                </li>
+            </ul>
+        </nav>
+
+    </footer>
+
+</body>
+
+</html>
