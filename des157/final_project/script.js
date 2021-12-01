@@ -8,6 +8,7 @@
 
     // resultContainer.className="hidden";
 
+    const sections = document.querySelectorAll('section');
     const one = document.querySelector('#one');
     const two = document.querySelector('#two');
     const next = document.querySelector('#next');
@@ -21,23 +22,22 @@
     const ultimateinfo = document.querySelector('#overlayfour');
     const senseiinfo = document.querySelector('#overlayfive');
 
+
     document.querySelector('#one').addEventListener('click', function() {
         one.className = "underline"
         two.classList.remove("underline");
         second.className = "hidden";
         first.classList.remove("hidden");
-        open.className = "hidden";
         next.classList.remove("hidden");
-
+        open.className = "hidden";
     });
     document.querySelector('#two').addEventListener('click', function() {
         two.className = "underline"
         one.classList.remove("underline");
         first.className = "hidden";
         second.classList.remove("hidden");
-        next.className = "hidden";
         open.classList.remove("hidden");
-
+        next.className = "hidden";
     });
 
 
